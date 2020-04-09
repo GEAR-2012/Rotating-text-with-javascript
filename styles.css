@@ -53,3 +53,25 @@ h1 {
 .rotating_text.center {
   margin: 0 auto;
 }
+
+.rotating_text.fixed {
+  width: 100px;
+  height: 100px;
+  font-size: 12px;
+  font-weight: bold;
+  color: red;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+}
+
+.rotating_text.fixed2 {
+  width: 80px;
+  height: 80px;
+  font-size: 12px;
+  font-weight: bold;
+  color: red;
+  position: fixed !important;
+  top: 10px;
+  left: 10px;
+}

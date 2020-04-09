@@ -50,14 +50,23 @@ function containerDeploying(x) {
 let speed = 50; // time between rotation steps in millisecond
 
 setInterval(function () {
-  let allContainers = document.getElementsByClassName("letter_holder");
-  let len = allContainers.length;
+  let allLetterHolders = document.getElementsByClassName("letter_holder");
+  let len = allLetterHolders.length;
   let rotate = 0;
-  let rotateInc = 0.5; // step incremet of rotation
+  let rotateInc = 0.5; // step incremet of rotation (positive number)
 
   for (let i = 0; i < len; i++) {
-    let rotBefore = allContainers[i].style.transform.slice(7, -4);
-    allContainers[i].style.transform =
-      "rotate(" + (rotBefore -= rotateInc) + "deg)";
+    let isCw = allLetterHolders[i].parentElement.classList.contains("cw");
+    let rotBefore = parseFloat(
+      allLetterHolders[i].style.transform.slice(7, -4)
+    );
+
+    if (isCw === true) {
+      rotate = rotBefore += rotateInc;
+    } else if (isCw === false) {
+      rotate = rotBefore -= rotateInc;
+    }
+
+    allLetterHolders[i].style.transform = "rotate(" + rotate + "deg)";
   }
 }, speed);
