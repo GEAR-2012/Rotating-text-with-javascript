@@ -55,9 +55,9 @@ FORMATTING AND CLASSING EXAMPLES:
 
 CLASSING AND INLINE FORMATTING EXAMPLES:
 ---------------------------
-<pre>
-  //<div class="rotating_text big center" style="color: rgb(0, 255, 34);">
-    //the desired text itself
-  //</div>
-</pre>
+
+
+**<div class="rotating_text big center" style="color: rgb(0, 255, 34);">
+**  the desired text itself
+**</div>
 
