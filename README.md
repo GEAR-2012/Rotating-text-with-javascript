@@ -11,6 +11,8 @@ The script is hopefully easy to use and understand.
 - the text itself should be directly in the div element
 - div elements should be formatted with CSS to the desired size (width & height must equal)
 - the text's font-family is made by javascript but it can be changed by the user.
+- the default rotation direction is counterclockwise (ccw)
+- rotation direction can be changed by adding a 'cw' class to the div element
 
 *************
 
@@ -56,7 +58,7 @@ FORMATTING AND CLASSING EXAMPLES:
 CLASSING AND INLINE FORMATTING EXAMPLES:
 ---------------------------
 
-<div class="rotating_text big center" style="color: rgb(0, 255, 34); font-weight: bold;">
+<div class="rotating_text big center cw" style="color: rgb(0, 255, 34); font-weight: bold;">
   the desired text itself
 </div>
 
