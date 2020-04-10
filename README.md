@@ -13,6 +13,8 @@ The script is hopefully easy to use and understand.
 - the text's font-family is made by javascript but it can be changed by the user.
 - the default rotation direction is counterclockwise (ccw)
 - rotation direction can be changed by adding a 'cw' class to the div element
+- the text default orientation is outside of the circle
+- the orientation of the text can be changed by adding a 'inside' class to the div element
 
 *************
 
