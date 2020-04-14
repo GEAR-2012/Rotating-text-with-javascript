@@ -16,7 +16,7 @@ The script is hopefully easy to use and understand.
 - the text default orientation is outside of the circle
 - the orientation of the text can be changed by adding a 'inside' class to the div element
 
-*************
+**************
 
 FORMATTING AND CLASSING EXAMPLES:
 ---------------------------------
